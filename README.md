@@ -6,3 +6,13 @@
 <br>
 
 #### Task-1 : Logic Gates
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/24cfbcd8-3ff2-4cae-b4fa-488e5c77af5c)
+
+
+#### Task-2 : Makerchip platfrom
+#### Task-3 : Combitional logic
+#### Task-4 : Sequential logic 
+#### Task-5 : Pipelined logic
+#### Task-6 : State
+#### Task-7 : Hierarchy
