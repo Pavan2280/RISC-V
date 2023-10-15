@@ -31,7 +31,18 @@ To access a specific example, please follow these steps:
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/bc069194-ee10-400a-8a1f-c86a3424ae10)
 
+**B) XOR Gate**
+1) **Click on 'Examples'**
+2) **Load Default Tempalte**
+3) **Go to editor and make changes**
+   ```
+   $out = ! $in;
+   $out1 = ($in1 ^ $in2);
+   ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d8f1e78-5e59-45a7-ac5c-ff1cefa75dcb)
 
+5) **Compile(Ctrl+E)**
+   
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
 #### Task-6 : State
