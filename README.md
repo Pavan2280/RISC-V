@@ -1,8 +1,7 @@
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/9a131993-315c-4406-80fb-0da36370b966)
 
-### This Repository Guides you to complete the RISC-V-BASED MYTH Course
+### This Repository Guides you to complete the RISC-V-BASED MYTH Course Assignments - Guided by Kunal Ghosh
 
-# ASIC Flow Course Assignments - Guided by Kunal Ghosh
 # Table of contents
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
