@@ -70,6 +70,22 @@ $out[7:0] = $sel ? $in1[7:0] : $in2[7:0];
 4b) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b97722f5-73ac-4c4b-ac02-0a4e04ce1220)
 
+**E) Simple Claculator**
+1) **Click on 'Examples'**
+2) **Load Default Template**   
+3) **Go to editor and make changes**
+```
+$val1[31:0] = $rand1[3:0]; 
+$val2[31:0] = $rand2[3:0];
+$sum[31:0] = $val1 + $val2;
+$diff[31:0] = $val1 - $val2;
+$prod[31:0] = $val1 * $val2;
+$qut[31:0] = $val1 / $val2;
+$out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0cb6dd50-4cea-420b-9287-e160c143e42b)
+
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
 #### Task-6 : State
