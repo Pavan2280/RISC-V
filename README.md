@@ -90,7 +90,7 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d548af2-e42f-48fd-9a33-fe47df3775fb)
 
-**A)Fibonacci series**
+**A) Fibonacci series**
 1) **Click on 'Examples'**
 2) **Load Default Template**   
 3) **Go to editor and make changes**
@@ -100,7 +100,7 @@ $fib[31:0] = $reset ? 1 : (>>1$fib + >>2$fib);
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0fe24200-ccfd-4d99-9c40-83ecb6dc277c)
 
-**B)Up-Counter**
+**B) Up-Counter**
 1) **Click on 'Examples'**
 2) **Load Default Template**   
 3) **Go to editor and make changes**
@@ -110,6 +110,41 @@ $num[2:0] = $reset ? 0 : (>>1$num + 1);
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/272b36d5-3abc-467b-9fac-2494ab5d338e)
 
+**C) Sequential Calculator**
+1) **Click on 'Examples'**
+2) **Load Default Template**   
+3) **Go to editor and make changes**
+```
+$val1[31:0] = (>>1$out); 
+$val2[31:0] = $rand2[3:0]; 
+$sum[31:0] = $val1 + $val2;
+$diff[31:0] = $val1 - $val2;
+$prod[31:0] = $val1 * $val2;
+$qut[31:0] = $val1 / $val2;
+$out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum); 
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/a97fcc7c-1ed6-48e2-b1c9-b46d89637dce)
+
 #### Task-5 : Pipelined logic
+**A) A simple pipeline through Pythagorean example**
+1) **Click on 'Examples'**
+2) **Load Default Template**   
+3) **Go to editor and make changes**
+```
+`include "sqrt32.v"
+|calc
+      @1
+         $aa_sq[31:0] = $aa[3:0] * $aa;
+         $bb_sq[31:0] = $bb[3:0] * $bb;
+      @2
+         $cc_sq[31:0] = $aa_sq + $bb_sq;
+      @3
+         $cc[31:0] = sqrt($cc_sq);
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/5ae27b57-c976-4ceb-b43f-995619ac538e)
+
+
 #### Task-6 : State
 #### Task-7 : Hierarchy
