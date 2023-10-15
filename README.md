@@ -20,7 +20,10 @@ To access a specific example, please follow these steps:
 4) **Load FGPA Multiplier Example**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/6a9a1ac2-de7f-4402-b979-c77ab2911faf)
 
-#### Task-3 : Labs Combitional logic
+#### Task-3 : Lab - Combitional logic
+**A) Inverter**
+
+
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
 #### Task-6 : State
