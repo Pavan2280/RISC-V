@@ -318,7 +318,7 @@ This RISC-V Architecture Block Diagram illustrates the fundamental components an
 
 For the consecutive labs, we will use the "RISC-V lab starting point code" from https://github.com/stevehoover/RISC-V_MYTH_Workshop.
 
-Use the following links : risc-v-starting-code-1 and risc-v-starting-code-2
+Use the following links : [risc-v-starting-code-1]([http://makerchip.com/](https://myth.makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2FRISC-V_MYTH_Workshop%2Fmaster%2Frisc-v_shell.tlv#)https://myth.makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2FRISC-V_MYTH_Workshop%2Fmaster%2Frisc-v_shell.tlv#) and risc-v-starting-code-2
 
 </details>
 
