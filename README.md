@@ -279,6 +279,7 @@ A RISC-V block diagram represents the architecture of a computer system based on
 CPU (Central Processing Unit): The core of the RISC-V processor, which executes instructions. It includes the Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Memory (MEM), and Write Back (WB) stages.
 
 **1) Instruction Memory**: Stores the program's instructions that the CPU fetches and executes.
+
 **2) Data Memory**: Stores data used by the CPU during program execution.
 **3) Registers**: A set of general-purpose registers used for temporary data storage and manipulation.
 **4) Control Unit**: Manages the control signals and coordination of the CPU's components.
