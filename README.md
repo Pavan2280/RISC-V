@@ -24,9 +24,9 @@ To access a specific example, please follow these steps:
 **A) Inverter**
 1) **Click on 'Examples'**
 2) **Load Default Tempalte**
-3) **Go to editor and make changes**
+3) **Go to editor and make changes(On line 16,in place of `   //...` type the below command)**
    ```
-   In place of line 16 type `$out=!$in;`
+  `$out=!$in;`
    ```
 
 #### Task-4 : Sequential logic 
