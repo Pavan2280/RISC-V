@@ -346,7 +346,12 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 #### Task-8 : Register File Write
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/45f8fea1-7db9-4ede-9c1d-d082f03764cc)
 
-#### Task-9 : Register File Write
+#### Task-9 : Branch Instructions
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/1ec20ce2-3dcf-4a1d-8941-48f3ea3ebaac)
+
+#### Task-10 : Testbench to check functionality
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e00a3113-f18e-453d-9820-d4327fdf1bd0)
+
 </details>
 
 <details>
