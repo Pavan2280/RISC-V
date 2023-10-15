@@ -326,6 +326,9 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ee23ca5b-0eaf-43a5-94ee-e992caa385c3)
 
 #### Task-2 : Instruction Fetch
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/7a013f50-0de4-4e51-99ae-61950c45ec13)
+
+#### Task-2 : Instruction Decode
 
 </details>
 
