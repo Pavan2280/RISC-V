@@ -4,8 +4,6 @@
 
 # Table of contents
 
-[Link to Day 1 and Day 2 README](https://github.com/Pavan2280/pes_asic_class)
-
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
 <br>
