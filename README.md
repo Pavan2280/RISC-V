@@ -55,7 +55,7 @@ To access a specific example, please follow these steps:
 **C) Mux without vector & with vectors**
 1) **Click on 'Examples'**
 2) **Load Default Tempalte**
-3a) **Go to editor and make changes**
+3) **Go to editor and make changes**
    ```
    $out = $sel ? $in1 : $in2;
    ```
