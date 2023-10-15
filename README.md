@@ -264,16 +264,16 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/7062601b-e0a7-4e9e-80c7-2d34a7a62abc)
 
-</br>
+</details>
 
 <details>
 <summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
 <br>
--
-</br>
+
+</details>
 
 <details>
 <summary>DAY 5 : Complete Pipelined RISC-V Micro Architecture </summary>
 <br>
--
-</br>
+
+</details>
