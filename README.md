@@ -90,15 +90,17 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d548af2-e42f-48fd-9a33-fe47df3775fb)
 
-
-**A) **
+**A)Fibonacci series **
 1) **Click on 'Examples'**
 2) **Load Default Template**   
 3) **Go to editor and make changes**
-``
-
+```
+$fib[31:0] = $reset ? 1 : (>>1$fib + >>2$fib ); 
 ```
 4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0fe24200-ccfd-4d99-9c40-83ecb6dc277c)
+
+
 #### Task-5 : Pipelined logic
 #### Task-6 : State
 #### Task-7 : Hierarchy
