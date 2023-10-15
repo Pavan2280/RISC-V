@@ -145,6 +145,22 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/5ae27b57-c976-4ceb-b43f-995619ac538e)
 
+**B) Pipeline Implementation**
+1) **Click on 'Examples'**
+2) **Load Default Template**
+3) **Go to editor and make changes**
+```
+|comp
+      @1
+         $err1 = $bad_input || $illegal_op;
+      @2
+         $err2 = $err1 || $over_flow;
+      @3
+         $err3 = $div_by_zero || $err2;
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/1c1d7113-0145-4e71-89d1-76731062eaa9)
+
 
 #### Task-6 : State
 #### Task-7 : Hierarchy
