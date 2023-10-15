@@ -13,8 +13,8 @@
 To use Makerchip IDE, you need to visit makerchip website at [http://makerchip.com/](http://makerchip.com/) and launch Makerchip IDE
 To access a specific example, please follow these steps:
 1) **Navigate to the 'Learn' section**
-2) **Click on 'Examples**
-3) **Load FGPA Multiplier Example**
+2) **Click on 'Examples'**
+3) **Load 'FGPA Multiplier' Example**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b7008e12-b9dc-4dbb-a7f2-fcdf84facfd9)
 
 4) **Load FGPA Multiplier Example**
@@ -22,7 +22,12 @@ To access a specific example, please follow these steps:
 
 #### Task-3 : Lab - Combitional logic
 **A) Inverter**
-
+1) **Click on 'Examples'**
+2) **Load Default Tempalte**
+3) **Go to editor and make changes**
+   ```
+   In place of line 16 type `$out=!$in;`
+   ```
 
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
