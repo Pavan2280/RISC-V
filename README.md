@@ -163,10 +163,10 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 
 
 #### Task-6 : Validity
-**1.Easier debug**
-**2.Cleaner design**
-**3.Better error checking**
-**4.Automated clock gating**
+1.**Easier debug**
+2.**Cleaner design**
+3.**Better error checking**
+4.**Automated clock gating**
 
 
 #### Task-7 : 
