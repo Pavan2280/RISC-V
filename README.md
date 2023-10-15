@@ -25,7 +25,7 @@ To access a specific example, please follow these steps:
 #### Task-3 : Lab - Combitional logic
 **A) Inverter**
 1) **Click on 'Examples'**
-2) **Load Default Tempalte**
+2) **Load Default Template**
 3) **Go to editor and make changes(On line 16,in place of `//...` type `$out = ! $in;`)**
 4) **Compile(Ctrl+E)**
 
@@ -33,7 +33,7 @@ To access a specific example, please follow these steps:
 
 **B) XOR Gate**
 1) **Click on 'Examples'**
-2) **Load Default Tempalte**
+2) **Load Default Template**
 3) **Go to editor and make changes**
 ```
 $out = ! $in;
@@ -44,8 +44,8 @@ $out1 = ($in1 ^ $in2);
 
 **C) Vectors**
 1) **Click on 'Examples'**
-2) **Load Default Tempalte**
-3a) **Go to editor and make changes**
+2) **Load Default Template**
+3) **Go to editor and make changes**
 ```
 $out[4:0] = $in1[3:0] + $in2[3:0];
 ```
@@ -54,7 +54,7 @@ $out[4:0] = $in1[3:0] + $in2[3:0];
 
 **C) Mux without vector & with vectors**
 1) **Click on 'Examples'**
-2) **Load Default Tempalte**
+2) **Load Default Template**
 3a) **Go to editor and make changes**
 ```
 $out = $sel ? $in1 : $in2;
