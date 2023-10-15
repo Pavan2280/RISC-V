@@ -275,6 +275,8 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 
 # RISC-V Architecture Block Diagram
 
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e5a22525-929b-4698-8da4-49ea87b872a2)
+
 ## Overview
 This RISC-V Architecture Block Diagram illustrates the fundamental components and their interactions within a computer system based on the RISC-V instruction set architecture. RISC-V is a modular and customizable architecture, providing a versatile framework for designing processors tailored to specific application requirements.
 
@@ -313,10 +315,6 @@ This RISC-V Architecture Block Diagram illustrates the fundamental components an
 
 10. **Peripherals**
     - *Description*: Peripherals are external devices such as input/output controllers, timers, and more. They connect to the CPU, enhancing the system's functionality by allowing interaction with the outside world.
-
-
-
-![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e5a22525-929b-4698-8da4-49ea87b872a2)
 
 </details>
 
