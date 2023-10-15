@@ -1,6 +1,6 @@
 PC : https://myth.makerchip.com/sandbox/0v2fWhznw/0Q1hkBK#
 Fetch : https://myth.makerchip.com/sandbox/0v2fWhznw/0Vmhx0J
-Instr decode :
+Instr decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Wnh5z3
 decode with validity : 
 decode with individual instruction : 
 register file : 
