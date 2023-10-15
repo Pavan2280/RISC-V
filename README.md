@@ -39,10 +39,22 @@ To access a specific example, please follow these steps:
    $out = ! $in;
    $out1 = ($in1 ^ $in2);
    ```
+4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d8f1e78-5e59-45a7-ac5c-ff1cefa75dcb)
 
-5) **Compile(Ctrl+E)**
-   
+
+
+**C) Vectors**
+1) **Click on 'Examples'**
+2) **Load Default Tempalte**
+3) **Go to editor and make changes**
+   ```
+   $out[4:0] = $in1[3:0] + $in2[3:0];
+   ```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/2271ebb8-9c56-427b-899f-c3bea738496c)
+
+
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
 #### Task-6 : State
