@@ -4,6 +4,8 @@
 
 # Table of contents
 
+<a name="top"></a>
+
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
 <br>
@@ -267,6 +269,8 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/7062601b-e0a7-4e9e-80c7-2d34a7a62abc)
 
+[Back to Top](#top)
+
 </details>
 
 <details>
@@ -352,10 +356,14 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 #### Task-10 : Testbench to check functionality
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e00a3113-f18e-453d-9820-d4327fdf1bd0)
 
+[Back to Top](#top)
+
 </details>
 
 <details>
 <summary>DAY 5 : Complete Pipelined RISC-V Micro Architecture </summary>
 <br>
+
+[Back to Top](#top)
 
 </details>
