@@ -55,16 +55,18 @@ To access a specific example, please follow these steps:
 **C) Mux without vector & with vectors**
 1) **Click on 'Examples'**
 2) **Load Default Tempalte**
-3) **Go to editor and make changes**
+3a) **Go to editor and make changes**
    ```
    $out = $sel ? $in1 : $in2;
    ```
-4) **Compile(Ctrl+E)**
+4a) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/a6420afc-2c40-4e8c-890c-c1d5f24d8e6b)
 
+3b) **Go to editor and make changes**
    ```
    $out[7:0] = $sel ? $in1[7:0] : $in2[7:0];
    ```
+4b) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b97722f5-73ac-4c4b-ac02-0a4e04ce1220)
 
 #### Task-4 : Sequential logic 
