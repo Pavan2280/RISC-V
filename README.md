@@ -5,4 +5,4 @@
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
 <br>
 
-+ Task-1 : Logic Gates
+#### Task-1 : Logic Gates
