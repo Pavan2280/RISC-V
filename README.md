@@ -337,7 +337,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 #### Task-5 : Individual Instruction decode
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/02822525-10bf-497d-87af-2306d47ef9a9)
 
-#### Task-6 : Register File read
+#### Task-6 : Register File Read
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/c6946fc3-2dc0-40b7-adf0-40c1ba37289d)
 
 #### Task-7 : ALU
