@@ -52,7 +52,7 @@ $out[4:0] = $in1[3:0] + $in2[3:0];
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/2271ebb8-9c56-427b-899f-c3bea738496c)
 
-**C) Mux without vector & with vectors**
+**D) Mux without vector & with vectors**
 1) **Click on 'Examples'**
 2) **Load Default Template**
    
@@ -87,6 +87,18 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0cb6dd50-4cea-420b-9287-e160c143e42b)
 
 #### Task-4 : Sequential logic 
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d548af2-e42f-48fd-9a33-fe47df3775fb)
+
+
+**A) **
+1) **Click on 'Examples'**
+2) **Load Default Template**   
+3) **Go to editor and make changes**
+``
+
+```
+4) **Compile(Ctrl+E)**
 #### Task-5 : Pipelined logic
 #### Task-6 : State
 #### Task-7 : Hierarchy
