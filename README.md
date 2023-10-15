@@ -13,6 +13,10 @@
 
 To use Makerchip IDE, you need to visit makerchip website at [http://makerchip.com/](http://makerchip.com/) and launch Makerchip IDE
 
+To access a specific example, please follow these steps:
+1)Navigate to the 'Learn' section.
+2)Click on 'Examples.'
+
 #### Task-3 : Combitional logic
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
