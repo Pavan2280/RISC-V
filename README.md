@@ -273,28 +273,48 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 <summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
 <br>
 
-# Exanple RISC-V Block Diagram
-A RISC-V block diagram represents the architecture of a computer system based on the RISC-V instruction set architecture. In short, it consists of the following key components:
+# RISC-V Architecture Block Diagram
 
-CPU (Central Processing Unit): The core of the RISC-V processor, which executes instructions. It includes the Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Memory (MEM), and Write Back (WB) stages.
+## Overview
+This RISC-V Architecture Block Diagram illustrates the fundamental components and their interactions within a computer system based on the RISC-V instruction set architecture. RISC-V is a modular and customizable architecture, providing a versatile framework for designing processors tailored to specific application requirements.
 
-**1) Instruction Memory**: Stores the program's instructions that the CPU fetches and executes.
+## Components
+1. **CPU (Central Processing Unit)**
+   - *Description*: The CPU serves as the core of the RISC-V processor, responsible for executing instructions. It includes multiple stages:
+     - Instruction Fetch (IF): Fetches instructions from memory.
+     - Instruction Decode (ID): Decodes the fetched instructions.
+     - Execution (EX): Performs arithmetic and logic operations.
+     - Memory (MEM): Manages data memory access.
+     - Write Back (WB): Writes results back to registers.
 
-**2) Data Memory**: Stores data used by the CPU during program execution.
+2. **Instruction Memory**
+   - *Description*: This memory component stores the program's instructions that the CPU fetches and executes. It's essential for the program's proper execution.
 
-**3) Registers**: A set of general-purpose registers used for temporary data storage and manipulation.
+3. **Data Memory**
+   - *Description*: Data Memory stores data used by the CPU during program execution. It is crucial for data manipulation and storage.
 
-**4) Control Unit**: Manages the control signals and coordination of the CPU's components.
+4. **Registers**
+   - *Description*: Registers are a set of general-purpose storage units used for temporary data storage and manipulation by the CPU. They play a pivotal role in instruction execution.
 
-**5)ALU (Arithmetic Logic Unit)**: Performs arithmetic and logic operations.
+5. **Control Unit**
+   - *Description*: The Control Unit manages control signals and coordinates the activities of the CPU's components, ensuring the proper execution of instructions.
 
-**6)Instruction Decoder**: Interprets and decodes instructions fetched from memory.
+6. **ALU (Arithmetic Logic Unit)**
+   - *Description*: The ALU performs arithmetic and logic operations as directed by the CPU's instructions. It is the computational workhorse of the processor.
 
-**7) Cache Memory**: Provides fast access to frequently used instructions and data.
+7. **Instruction Decoder**
+   - *Description*: The Instruction Decoder interprets and decodes instructions fetched from memory. It translates instructions into actions for the CPU to execute.
 
-**8) Bus Interface**: Facilitates data transfer between the CPU, memory, and peripherals.
+8. **Cache Memory**
+   - *Description*: Cache Memory provides fast access to frequently used instructions and data. It helps improve the system's overall performance by reducing memory access times.
 
-**9) Peripherals**: External devices like input/output controllers, timers, and more that connect to the CPU for broader system functionality.
+9. **Bus Interface**
+   - *Description*: The Bus Interface facilitates data transfer between the CPU, memory, and peripherals. It ensures efficient communication within the system.
+
+10. **Peripherals**
+    - *Description*: Peripherals are external devices such as input/output controllers, timers, and more. They connect to the CPU, enhancing the system's functionality by allowing interaction with the outside world.
+
+
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e5a22525-929b-4698-8da4-49ea87b872a2)
 
