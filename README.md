@@ -162,5 +162,11 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/1c1d7113-0145-4e71-89d1-76731062eaa9)
 
 
-#### Task-6 : State
-#### Task-7 : Hierarchy
+#### Task-6 : Validity
+**Easier debug**
+**Cleaner design**
+**Better error checking**
+**Automated clock gating**
+
+
+#### Task-7 : 
