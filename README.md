@@ -11,7 +11,7 @@
 
 #### Task-2 : Makerchip platfrom
 
-To use Makerchip IDE, you need to visit our website at [http://makerchip.com/](http://makerchip.com/) and launch Makerchip IDE
+To use Makerchip IDE, you need to visit makerchip website at [http://makerchip.com/](http://makerchip.com/) and launch Makerchip IDE
 
 #### Task-3 : Combitional logic
 #### Task-4 : Sequential logic 
