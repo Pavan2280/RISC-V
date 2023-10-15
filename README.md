@@ -42,8 +42,6 @@ To access a specific example, please follow these steps:
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0d8f1e78-5e59-45a7-ac5c-ff1cefa75dcb)
 
-
-
 **C) Vectors**
 1) **Click on 'Examples'**
 2) **Load Default Tempalte**
@@ -54,6 +52,20 @@ To access a specific example, please follow these steps:
 4) **Compile(Ctrl+E)**
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/2271ebb8-9c56-427b-899f-c3bea738496c)
 
+**C) Mux without vector & with vectors**
+1) **Click on 'Examples'**
+2) **Load Default Tempalte**
+3) **Go to editor and make changes**
+   ```
+   $out = $sel ? $in1 : $in2;
+   ```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/a6420afc-2c40-4e8c-890c-c1d5f24d8e6b)
+
+   ```
+   $out[7:0] = $sel ? $in1[7:0] : $in2[7:0];
+   ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b97722f5-73ac-4c4b-ac02-0a4e04ce1220)
 
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
