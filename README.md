@@ -55,6 +55,7 @@ $out[4:0] = $in1[3:0] + $in2[3:0];
 **C) Mux without vector & with vectors**
 1) **Click on 'Examples'**
 2) **Load Default Template**
+   
 3a) **Go to editor and make changes**
 ```
 $out = $sel ? $in1 : $in2;
