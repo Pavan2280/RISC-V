@@ -323,8 +323,7 @@ Use the following links : [Link for the starter code](https://myth.makerchip.com
 All the code files are located within the "DAY4" folder : [Link to DAY4 ](https://github.com/Pavan2280/RISC-V/tree/main/DAY4)
 
 #### Task-1 : Program Counter
-![Screenshot from 2023-10-16 01-07-01](https://github.com/Pavan2280/RISC-V/assets/131603225/682076b5-aa12-41f1-b50b-b088cab09d6f)
-
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ee23ca5b-0eaf-43a5-94ee-e992caa385c3)
 
 #### Task-2 : Instruction Fetch
 
