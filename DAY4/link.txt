@@ -1,10 +1,10 @@
 PC : https://myth.makerchip.com/sandbox/0v2fWhznw/0Q1hkBK#
 Fetch : https://myth.makerchip.com/sandbox/0v2fWhznw/0Vmhx0J
 Instr decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Wnh5z3
-decode with validity : 
-decode with individual instruction : 
-register file : 
+Decode with validity : 
+Decode with individual instruction : 
+Reg read file : 
 ALU : 
-reg file write : 
+Reg file write : 
 Branch : 
 Final simulation :
