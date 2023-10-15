@@ -273,6 +273,23 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 <summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
 <br>
 
+# Exanple RISC-V Block Diagram
+A RISC-V block diagram represents the architecture of a computer system based on the RISC-V instruction set architecture. In short, it consists of the following key components:
+
+CPU (Central Processing Unit): The core of the RISC-V processor, which executes instructions. It includes the Instruction Fetch (IF), Instruction Decode (ID), Execution (EX), Memory (MEM), and Write Back (WB) stages.
+
+**1) Instruction Memory**: Stores the program's instructions that the CPU fetches and executes.
+**2) Data Memory**: Stores data used by the CPU during program execution.
+**3) Registers**: A set of general-purpose registers used for temporary data storage and manipulation.
+**4) Control Unit**: Manages the control signals and coordination of the CPU's components.
+**5)ALU (Arithmetic Logic Unit)**: Performs arithmetic and logic operations.
+**6)Instruction Decoder**: Interprets and decodes instructions fetched from memory.
+**7) Cache Memory**: Provides fast access to frequently used instructions and data.
+**8) Bus Interface**: Facilitates data transfer between the CPU, memory, and peripherals.
+**9) Peripherals**: External devices like input/output controllers, timers, and more that connect to the CPU for broader system functionality.
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/e5a22525-929b-4698-8da4-49ea87b872a2)
+
 </details>
 
 <details>
