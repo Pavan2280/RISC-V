@@ -1,10 +1,10 @@
-PC : https://myth.makerchip.com/sandbox/0v2fWhznw/0Q1hkBK#
-Fetch : https://myth.makerchip.com/sandbox/0v2fWhznw/0Vmhx0J
-Instr decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Wnh5z3
-Decode with validity : 
-Decode with individual instruction : 
-Reg read file : 
+Program Counter : https://myth.makerchip.com/sandbox/0v2fWhznw/0Q1hkBK#
+Instruction Fetch : https://myth.makerchip.com/sandbox/0v2fWhznw/0Vmhx0J
+Instruction Decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Wnh5z3
+Instruction Decode with validity : 
+Individual Instruction decode : 
+Register File Read :
 ALU : 
-Reg file write : 
-Branch : 
-Final simulation :
+Register File Write : 
+Branch Instructions : 
+Final simulation (Testbench to check functionality) :
