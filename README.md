@@ -269,11 +269,11 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 <details>
 <summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
 <br>
-
+-
 </br>
 
 <details>
 <summary>DAY 5 : Complete Pipelined RISC-V Micro Architecture </summary>
 <br>
-
+-
 </br>
