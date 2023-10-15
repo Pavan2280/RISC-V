@@ -1,10 +1,10 @@
 Program Counter : https://myth.makerchip.com/sandbox/0v2fWhznw/0Q1hkBK#
 Instruction Fetch : https://myth.makerchip.com/sandbox/0v2fWhznw/0Vmhx0J
 Instruction Decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Wnh5z3
-Instruction Decode with validity : 
-Individual Instruction decode : 
-Register File Read :
-ALU : 
-Register File Write : 
-Branch Instructions : 
-Final simulation (Testbench to check functionality) :
+Instruction Decode with validity : https://myth.makerchip.com/sandbox/0v2fWhznw/0X6hXBz
+Individual Instruction decode : https://myth.makerchip.com/sandbox/0v2fWhznw/0Y6hLkx
+Register File Read : https://myth.makerchip.com/sandbox/0v2fWhznw/0Z4h5PZ
+ALU : https://myth.makerchip.com/sandbox/0v2fWhznw/01jhMnV
+Register File Write : https://myth.makerchip.com/sandbox/0v2fWhznw/02RhpKB
+Branch Instructions : https://myth.makerchip.com/sandbox/0v2fWhznw/03lhp7r
+Final simulation (Testbench to check functionality) : https://myth.makerchip.com/sandbox/0v2fWhznw/048hB7Q
