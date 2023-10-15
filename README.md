@@ -9,15 +9,17 @@
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/24cfbcd8-3ff2-4cae-b4fa-488e5c77af5c)
 
-#### Task-2 : Makerchip platfrom
-
+#### Task-2 : Labs Makerchip platfrom
 To use Makerchip IDE, you need to visit makerchip website at [http://makerchip.com/](http://makerchip.com/) and launch Makerchip IDE
-
 To access a specific example, please follow these steps:
 1) **Navigate to the 'Learn' section**
 2) **Click on 'Examples**
+3) **Load FGPA Multiplier Example**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b7008e12-b9dc-4dbb-a7f2-fcdf84facfd9)
+4) **Load FGPA Multiplier Example**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/6a9a1ac2-de7f-4402-b979-c77ab2911faf)
 
-#### Task-3 : Combitional logic
+#### Task-3 : Labs Combitional logic
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
 #### Task-6 : State
