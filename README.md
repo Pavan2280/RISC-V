@@ -332,7 +332,21 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/7b8a3ee1-d2e8-4cb3-8d73-ea98311150f1)
 
 #### Task-4 : Instruction Decode with validity
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/446d2df0-9793-4b2f-9654-38bbabeac788)
 
+#### Task-5 : Individual Instruction decode
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/02822525-10bf-497d-87af-2306d47ef9a9)
+
+#### Task-6 : Register File read
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/c6946fc3-2dc0-40b7-adf0-40c1ba37289d)
+
+#### Task-7 : ALU
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d4402cd0-9ff7-4071-a0f6-b8a71bccb501)
+
+#### Task-8 : Register File Write
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/45f8fea1-7db9-4ede-9c1d-d082f03764cc)
+
+#### Task-9 : Register File Write
 </details>
 
 <details>
