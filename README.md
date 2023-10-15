@@ -316,6 +316,10 @@ This RISC-V Architecture Block Diagram illustrates the fundamental components an
 10. **Peripherals**
     - *Description*: Peripherals are external devices such as input/output controllers, timers, and more. They connect to the CPU, enhancing the system's functionality by allowing interaction with the outside world.
 
+For the consecutive labs, we will use the "RISC-V lab starting point code" from https://github.com/stevehoover/RISC-V_MYTH_Workshop.
+
+Use the following links : risc-v-starting-code-1 and risc-v-starting-code-2
+
 </details>
 
 <details>
