@@ -168,5 +168,112 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 + Better error checking
 + Automated clock gating
 
+**A) 2 cycle calculator with validity**
+1) **Click on 'Examples'**
+2) **Load Default Template**
+3) **Go to editor and make changes**
+```
+|calc
+      @0
+         $reset = *reset;
+         
+      @1
+         $val1 [31:0] = >>2$out [31:0];
+         $val2 [31:0] = $rand2[3:0];
+         
+         $valid = $reset ? 1'b0 : >>1$valid + 1'b1;
+         $valid_or_reset = $valid || $reset;
+         
+      ?$valid_or_reset
+      @1
+         $sum [31:0] = $val1 + $val2;
+         $diff[31:0] = $val1 - $val2;
+         $prod[31:0] = $val1 * $val2;
+         $qut [31:0] = $val1 / $val2;
+         
+      @2
+         $out [31:0] = $reset ? 32'b0 :
+                      ($op[1:0] == 2'b00) ? $sum :
+                      ($op[1:0] == 2'b01) ? $diff :
+                      ($op[1:0] == 2'b10) ? $prod :
+                                              $qut ;
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/bd992f12-ba84-4ca9-8460-4f0c94ef1576)
 
-#### Task-7 : 
+**B) Distance Calculator**
+1) **Click on 'Examples'**
+2) **Load Default Template**
+3) **Go to editor and make changes**
+```
+|calc
+      @1
+         $reset = *reset;
+         
+      ?$valid
+         @1
+            $aa_sq[31:0] = $aa[3:0] * $aa;
+            $bb_sq[31:0] = $bb[3:0] * $bb;;
+         @2
+            $cc_sq[31:0] = $aa_sq + $bb_sq;;
+         @3
+            $cc[31:0] = sqrt($cc_sq);
+      @4
+         $total_distance[63:0] =
+            $reset ? 0 :
+            $valid ? >>1$total_distance + $cc :
+                     >>1$total_distance;
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/bca945ee-92ae-4e31-a81c-a30536b50caf)
+
+**A) Calulator Memory**
+1) **Click on 'Examples'**
+2) **Load Default Template**
+3) **Go to editor and make changes**
+```
+|calc
+      @0
+         $reset = *reset;
+         
+      @1
+         $val1 [31:0] = >>2$out [31:0];
+         $val2 [31:0] = $rand2[3:0];
+         
+         $valid = $reset ? 1'b0 : >>1$valid + 1'b1;
+         $valid_or_reset = $valid || $reset;
+         
+      ?$valid_or_reset
+      @1
+         $sum [31:0] = $val1 + $val2;
+         $diff[31:0] = $val1 - $val2;
+         $prod[31:0] = $val1 * $val2;
+         $qut [31:0] = $val1 / $val2;
+         
+      @2
+         $mem[31:0] = $reset ? 32'b0 :
+                      ($op[2:0] == 3'b101) ? $val1 : >>2$mem ;
+         
+         $out [31:0] = $reset ? 32'b0 :
+                      ($op[2:0] == 3'b000) ? $sum :
+                      ($op[2:0] == 3'b001) ? $diff :
+                      ($op[2:0] == 3'b010) ? $prod :
+                      ($op[2:0] == 3'b011) ? $qut  :
+                      ($op[2:0] == 3'b100) ? >>2$mem : >>2$out ;
+```
+4) **Compile(Ctrl+E)**
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/7062601b-e0a7-4e9e-80c7-2d34a7a62abc)
+
+</br>
+
+<details>
+<summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
+<br>
+
+</br>
+
+<details>
+<summary>DAY 5 : Complete Pipelined RISC-V Micro Architecture </summary>
+<br>
+
+</br>
