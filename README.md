@@ -15,16 +15,22 @@ To access a specific example, please follow these steps:
 1) **Navigate to the 'Learn' section**
 2) **Click on 'Examples'**
 3) **Load 'FGPA Multiplier' Example**
+
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b7008e12-b9dc-4dbb-a7f2-fcdf84facfd9)
 
 4) **Load FGPA Multiplier Example**
+
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/6a9a1ac2-de7f-4402-b979-c77ab2911faf)
 
 #### Task-3 : Lab - Combitional logic
 **A) Inverter**
 1) **Click on 'Examples'**
 2) **Load Default Tempalte**
-3) **Go to editor and make changes(On line 16,in place of `//...` type the below command`$out=!$in;`)**
+3) **Go to editor and make changes(On line 16,in place of `//...` type `$out = ! $in;`)**
+4) **Compile(Ctrl+E)**
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/bc069194-ee10-400a-8a1f-c86a3424ae10)
+
 
 #### Task-4 : Sequential logic 
 #### Task-5 : Pipelined logic
