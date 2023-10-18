@@ -1133,14 +1133,112 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
    m4+imem(@1)    // Args: (read stage)
    m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
-   m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/263bda41-72a7-4c49-af42-8dac60bcdd93)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0c8e5b55-0cd6-4c78-b1b5-f961fd5bf679)
 
 
 #### Dealing with invalid cycles
-
+```
+|cpu
+      @0
+         $reset = *reset;
+         $pc[31:0] = >>1$reset ? 32'b0 :
+                         >>1$taken_br ? >>1$br_tgt_pc :
+                                 >>1$pc + 32'd4;
+         $imem_rd_addr[M4_IMEM_INDEX_CNT-1:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
+         $imem_rd_en = !$reset;
+         $start = >>1$reset && !$reset;
+         $valid = $reset ? 1'b0 : $start ? 1'b1 :
+                                          >>3$valid;
+      /imem[7:0]
+         @1
+            $instr[31:0] = *instrs\[#imem\];
+      ?$imem_rd_en
+         @1
+            $imem_rd_data[31:0] = /imem[$imem_rd_addr]$instr;
+      @1   
+         $instr[31:0] = $imem_rd_data[31:0];
+         $is_b_instr = $instr[6:2] ==? 5'b11000;
+         $is_r_instr = $instr[6:2] ==? 5'b01011 ||
+                          $instr[6:2] ==? 5'b011x0 ||
+                          $instr[6:2] ==? 5'b10100;
+         $is_j_instr = $instr[6:2] ==? 5'b11011;
+         $is_i_instr = $instr[6:2] ==? 5'b0000x ||
+                            $instr[6:2] ==? 5'b001x0 ||
+                            $instr[6:2] ==? 5'b11001;
+         $is_u_instr = $instr[6:2] ==? 5'b0x101;
+         $is_s_instr = $instr[6:2] ==? 5'b0100x;
+         $rs1_valid = $is_r_instr || $is_i_instr || $is_s_instr || $is_b_instr;
+         $rs2_valid = $is_r_instr || $is_s_instr || $is_b_instr;
+         $rd_valid = $is_r_instr || $is_i_instr || $is_u_instr || $is_j_instr;
+         $funct3_valid = $is_r_instr || $is_i_instr || $is_s_instr || $is_b_instr;
+         $funct7_valid = $is_r_instr;
+         $imm[31:0] = $is_i_instr ? {{21{$instr[31]}}, $instr[30:20]} :
+                         $is_s_instr ? {{21{$instr[31]}}, $instr[30:25], $instr[11:7]} :
+                         $is_b_instr ? {{20{$instr[31]}}, $instr[7], $instr[30:25], $instr[11:8], 1'b0} :
+                         $is_u_instr ? {$instr[31:12], 12'b0} :
+                         $is_j_instr ? {{12{$instr[31]}}, $instr[19:12], $instr[20], $instr[30:21], 1'b0} :
+                                     32'b0;
+         ?$rs1_valid
+            $rs1[4:0] = $instr[19:15];
+         ?$rs2_valid
+            $rs2[4:0] = $instr[24:20];
+         ?$rd_valid
+            $rd[4:0] = $instr[11:7];
+         ?$funct3_valid
+            $funct3[2:0] = $instr[14:12];
+         ?$funct7_valid
+            $funct7[6:0] = $instr[31:25];
+         $opcode[6:0] = $instr[6:0];
+         $rf_wr_en = $rd_valid && $rd != 5'b0;
+         $rf_wr_index[4:0] = $rd;
+         $rf_wr_data[31:0] = $result;
+         $dec_bits[10:0] = {$funct7[5], $funct3, $opcode};
+         $is_bne = $dec_bits ==? 11'bx_001_1100011;
+         $is_bltu = $dec_bits ==? 11'bx_110_1100011;
+         $is_blt = $dec_bits ==? 11'bx_100_1100011;
+         $is_bgeu = $dec_bits ==? 11'bx_111_1100011;
+         $is_bge = $dec_bits ==? 11'bx_101_1100011;
+         $is_beq = $dec_bits ==? 11'bx_000_1100011;
+         $is_addi = $dec_bits ==? 11'bx_000_0010011;
+         $is_add = $dec_bits ==? 11'b0_000_0110011;
+      /xreg[31:0]
+         @1
+            $wr = |cpu$rf_wr_en && (|cpu$rf_wr_index != 5'b0) && (|cpu$rf_wr_index == #xreg);
+            $value[31:0] = |cpu$reset ? #xreg : 
+                                  $wr ? |cpu$rf_wr_data : $RETAIN;
+      @1
+         $rf_rd_index1[4:0] = $rs1;
+         $rf_rd_en1 = $rs1_valid;
+         $rf_rd_en2 = $rs2_valid;
+         $rf_rd_index2[4:0] = $rs2;
+         ?$rf_rd_en1
+            $rf_rd_data1[31:0] = /xreg[$rf_rd_index1]>>1$value;
+         ?$rf_rd_en2
+            $rf_rd_data2[31:0] = /xreg[$rf_rd_index2]>>1$value;
+         $src1_value[31:0] = $rf_rd_data1;
+         $src2_value[31:0] = $rf_rd_data2;
+         $result[31:0] = $is_addi ? $src1_value + $imm :
+                          $is_add ? $src1_value + $src2_value :
+                                    32'bx;
+         $taken_br = $is_beq ? ($src1_value == $src2_value) :
+                          $is_bne ? ($src1_value != $src2_value) :
+                          $is_blt ? (($src1_value < $src2_value) ^ ($src1_value[31] != $src2_value[31])) :
+                          $is_bge ? (($src1_value >= $src2_value) ^ ($src1_value[31] != $src2_value[31])) :
+                          $is_bltu ? ($src1_value < $src2_value) :
+                          $is_bgeu ? ($src1_value >= $src2_value) :
+                                          1'b0;
+         $br_tgt_pc[31:0] = $pc + $imm;
+      @3
+         $valid_taken_br = $valid && $taken_br;
+         *passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9);
+   |cpu
+      m4+imem(@1)    // Args: (read stage)
+      m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
+   m4+cpu_viz(@4)    // For visualisation
+```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/67cef066-fcb6-4c24-b756-1ee12b6232a6)
 
 #### Modifying 3-cycle RISC-V to Distribute Logic
@@ -1242,7 +1340,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d4f6bfd3-d11a-4f9e-bc71-8a28b534c4c3)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/acd832cf-1abf-4969-b574-e0571fa484e0)
@@ -1348,7 +1446,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/eb601178-202d-42bf-b587-62123ecdfb8a)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/c2711cbf-5591-47d3-aa5a-a4dd97c88140)
@@ -1453,7 +1551,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/3fde4b7d-17bb-4ce8-bc8f-15461a33fab2)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/69d909bc-110f-4100-b900-69b662712d78)
@@ -1582,7 +1680,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/15411bab-690b-4138-b2b8-3e0b206ab3f5)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/92d2eb39-7a89-4505-a0d4-47529d1fbdfb)
@@ -1732,7 +1830,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d8fe513e-0707-40e2-afac-1110c55da50c)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b94c7e56-2c0e-49fb-b463-d94a96e182d3)
@@ -1887,7 +1985,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/10dbaef7-b862-4820-85b1-77f7a289e2ae)
 
@@ -2040,7 +2138,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 |cpu
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ce90167d-e0a8-4302-9538-80c948b29bbb)
 
@@ -2206,7 +2304,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+dmem(@4)    // Args: (read/write stage)
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ca39bd50-4577-4630-9ae1-aa1c32718e4c)
 
@@ -2377,7 +2475,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+dmem(@4)    // Args: (read/write stage)
-      m4+cpu_viz(@4)    // For visualisation
+m4+cpu_viz(@4)    // For visualisation
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/592a3b1a-7992-44af-af1b-be0b6a6b161b)
 
