@@ -1847,7 +1847,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b54e3d94-e28f-480d-b7b4-730e5541b499)
 
-#### The code required for the RISC-V Core written in TL-Verilog and System Verilog can be compared by selecting the "Show Verilog" on the makerchip platform under the "E" tab. Upon visualization, a significant code reduction can be seen in the comparision chart.
+> The code required for the RISC-V Core written in TL-Verilog and System Verilog can be compared by selecting the "Show Verilog" on the makerchip platform under the "E" tab. Upon visualization, a significant code reduction can be seen in the comparision chart.
 
 # RISC V Core block diagram
 
