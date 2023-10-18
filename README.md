@@ -156,9 +156,7 @@ In this repository, you will find:
 
 ## Get Started
 
-To kickstart your journey into RISC-V CPU core design, simply explore the contents of this repository. The resources provided here will guide you through each step of the workshop.
-
-We wish you the best of luck in this exciting endeavor. Enjoy your MYTH journey and the fascinating world of RISC-V CPU core design!
+To kickstart your journey into RISC-V CPU core design, simply explore the contents of this repository. The resources provided here will guide you through each step of the workshop. Enjoy your MYTH journey and the fascinating world of RISC-V CPU core design!
 
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
