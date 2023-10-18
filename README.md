@@ -1839,6 +1839,10 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/592a3b1a-7992-44af-af1b-be0b6a6b161b)
 
+[Back to Top](#top)
+
+</details>
+
 # Code Comparison
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b54e3d94-e28f-480d-b7b4-730e5541b499)
@@ -1848,10 +1852,6 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 # RISC V Core block diagram
 
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/c67bbe8d-db00-4eef-a983-2062f3f3c9b7)
-
-[Back to Top](#top)
-
-</details>
 
 # References
 You can follow the below mentioned sites for more information regarding the particular topics.
