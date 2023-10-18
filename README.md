@@ -1587,7 +1587,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/15411bab-690b-4138-b2b8-3e0b206ab3f5)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/92d2eb39-7a89-4505-a0d4-47529d1fbdfb)
 
-### Complete ALU
+#### Complete ALU
 ```
 |cpu
       @0
@@ -1737,9 +1737,9 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d8fe513e-0707-40e2-afac-1110c55da50c)
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b94c7e56-2c0e-49fb-b463-d94a96e182d3)
 
-# Load and Store Instructions
+#### Load and Store Instructions
 
-# Redirecting Load
+#### Redirecting Load
 
 ```
  |cpu
@@ -1891,7 +1891,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/10dbaef7-b862-4820-85b1-77f7a289e2ae)
 
-# Load data from register to memory file
+#### Load data from register to memory file
 ```
 |cpu
       @0
@@ -2044,7 +2044,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ce90167d-e0a8-4302-9538-80c948b29bbb)
 
-# Instantiating Data Memory to CPU
+#### Instantiating Data Memory to CPU
 ```
 |cpu
       @0
@@ -2210,7 +2210,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 ```
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/ca39bd50-4577-4630-9ae1-aa1c32718e4c)
 
-# Jump Instruction
+#### Jump Instruction
 ```
 |cpu
       @0
