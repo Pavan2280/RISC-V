@@ -586,8 +586,13 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
    m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
    m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/263bda41-72a7-4c49-af42-8dac60bcdd93)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/0c8e5b55-0cd6-4c78-b1b5-f961fd5bf679)
+
 
 #### Dealing with invalid cycles
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/67cef066-fcb6-4c24-b756-1ee12b6232a6)
 
 #### Modifying 3-cycle RISC-V to Distribute Logic
 ```
@@ -690,6 +695,8 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d4f6bfd3-d11a-4f9e-bc71-8a28b534c4c3)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/acd832cf-1abf-4969-b574-e0571fa484e0)
 
 #### Register File Bypass
 ```
@@ -794,6 +801,8 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/eb601178-202d-42bf-b587-62123ecdfb8a)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/c2711cbf-5591-47d3-aa5a-a4dd97c88140)
 
 #### To correct Branch Target Path
 ```
@@ -897,6 +906,8 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/3fde4b7d-17bb-4ce8-bc8f-15461a33fab2)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/69d909bc-110f-4100-b900-69b662712d78)
 
 #### Complete Instruction Decode
 ```
@@ -1024,6 +1035,8 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/15411bab-690b-4138-b2b8-3e0b206ab3f5)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/92d2eb39-7a89-4505-a0d4-47529d1fbdfb)
 
 ### Complete ALU
 ```
@@ -1172,6 +1185,8 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
 ```
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/d8fe513e-0707-40e2-afac-1110c55da50c)
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/b94c7e56-2c0e-49fb-b463-d94a96e182d3)
 
 [Back to Top](#top)
 
