@@ -1,3 +1,5 @@
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/9a131993-315c-4406-80fb-0da36370b966)
+
 # Objective 
 > VLSI ASIC design involves creating custom circuits optimized for specific tasks using RTL (Register-Transfer Level) description. This involves designing digital logic using hardware description languages like VHDL or Verilog, converting it to gate-level representation through synthesis, and eventually translating it into a physical layout for fabrication. The process includes architectural design, logic implementation, verification, and testing, resulting in highly efficient and tailored integrated circuits.
 
@@ -127,8 +129,6 @@ chmod 755 run.sh
 
 [Back to Top](#top)
 </details>
-
-![image](https://github.com/Pavan2280/RISC-V/assets/131603225/9a131993-315c-4406-80fb-0da36370b966)
 
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
