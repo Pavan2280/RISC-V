@@ -1,27 +1,34 @@
 ![image](https://github.com/Pavan2280/RISC-V/assets/131603225/9a131993-315c-4406-80fb-0da36370b966)
 
-# Objective 
-> VLSI ASIC design involves creating custom circuits optimized for specific tasks using RTL (Register-Transfer Level) description. This involves designing digital logic using hardware description languages like VHDL or Verilog, converting it to gate-level representation through synthesis, and eventually translating it into a physical layout for fabrication. The process includes architectural design, logic implementation, verification, and testing, resulting in highly efficient and tailored integrated circuits.
+# RISC-V CPU Core Design Workshop - MYTH
 
-# Outcomes
-+ RTL Description
-+ Logic Synthesis
-+ Physical Design
-+ Verification
+> Welcome to the RISC-V CPU Core Design Workshop, known as MYTH (Microprocessor for You in Thirty Hours). This repository is your one-stop destination for all the information and resources you'll need to participate in this exciting 5-day workshop offered by VLSI System Design (VSD) in collaboration with Redwood EDA.
 
-# Minimum Requirements for installation 
-- ubuntu 20 + 
-- min. disk space 150 Gb 
-- RAM at least 6 Gb
+## Overview
 
-# Steps for installation
-- Enter these commands in terminal 
-```
-git clone https://github.com/kunalg123/riscv_workshop_collaterals
-cd riscv_workshop_collaterals
-chmod 755 run.sh
-./run.sh 
-```
+> The MYTH workshop is an intensive program that guides you through the process of designing a RISC-V based CPU core. In just five days, you'll gain a deep understanding of the RISC-V Instruction Set Architecture (ISA) and implement a simplified RISC-V core with a fundamental instruction set. This repository holds the key to your success in the MYTH workshop.
+
+## Key Highlights
+
+- **RISC-V ISA Basics**: You will dive into the essentials of the RISC-V ISA, laying the foundation for core design.
+- **Five-Day Challenge**: In a remarkably short span of five days, you will take on the challenge of creating a RISC-V CPU core.
+- **Innovative Design Approach**: We leverage the power of Transaction Level Verilog (TL-Verilog) for a streamlined and efficient design process.
+- **Makerchip IDE Platform**: You will work with the Makerchip IDE platform, which provides a user-friendly environment for core development.
+
+## Contents
+
+In this repository, you will find:
+
+- **Workshop Materials**: Comprehensive resources, including presentations, documentation, and design guidelines.
+- **TL-Verilog Code**: Sample TL-Verilog code for RISC-V core design.
+- **Makerchip Setup**: Instructions on setting up the Makerchip IDE for your design work.
+- **Additional Resources**: Supplementary materials and links to deepen your understanding of RISC-V and core design.
+
+## Get Started
+
+To kickstart your journey into RISC-V CPU core design, simply explore the contents of this repository. The resources provided here will guide you through each step of the workshop. Enjoy your MYTH journey and the fascinating world of RISC-V CPU core design!
+
+This Course mainly covers Day 3 to 5. For details of Day1 and Day2 [click here](https://github.com/Pavan2280/pes_asic_class)
 
 <a name="top"></a>
   
@@ -129,34 +136,6 @@ chmod 755 run.sh
 
 [Back to Top](#top)
 </details>
-
-# RISC-V CPU Core Design Workshop - MYTH
-
-> Welcome to the RISC-V CPU Core Design Workshop, known as MYTH (Microprocessor for You in Thirty Hours). This repository is your one-stop destination for all the information and resources you'll need to participate in this exciting 5-day workshop offered by VLSI System Design (VSD) in collaboration with Redwood EDA.
-
-## Overview
-
-> The MYTH workshop is an intensive program that guides you through the process of designing a RISC-V based CPU core. In just five days, you'll gain a deep understanding of the RISC-V Instruction Set Architecture (ISA) and implement a simplified RISC-V core with a fundamental instruction set. This repository holds the key to your success in the MYTH workshop.
-
-## Key Highlights
-
-- **RISC-V ISA Basics**: You will dive into the essentials of the RISC-V ISA, laying the foundation for core design.
-- **Five-Day Challenge**: In a remarkably short span of five days, you will take on the challenge of creating a RISC-V CPU core.
-- **Innovative Design Approach**: We leverage the power of Transaction Level Verilog (TL-Verilog) for a streamlined and efficient design process.
-- **Makerchip IDE Platform**: You will work with the Makerchip IDE platform, which provides a user-friendly environment for core development.
-
-## Contents
-
-In this repository, you will find:
-
-- **Workshop Materials**: Comprehensive resources, including presentations, documentation, and design guidelines.
-- **TL-Verilog Code**: Sample TL-Verilog code for RISC-V core design.
-- **Makerchip Setup**: Instructions on setting up the Makerchip IDE for your design work.
-- **Additional Resources**: Supplementary materials and links to deepen your understanding of RISC-V and core design.
-
-## Get Started
-
-To kickstart your journey into RISC-V CPU core design, simply explore the contents of this repository. The resources provided here will guide you through each step of the workshop. Enjoy your MYTH journey and the fascinating world of RISC-V CPU core design!
 
 <details>
 <summary>DAY-3 : Digital Logic with TL-Verilog in Makerchip IDE</summary>
