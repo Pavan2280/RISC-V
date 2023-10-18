@@ -489,8 +489,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 <br>
 
 #### 3-cycle RISCV
-
-
+```
 |cpu
    @0
       $reset = *reset;
@@ -586,11 +585,12 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
    m4+imem(@1)    // Args: (read stage)
    m4+rf(@1, @1)  // Args: (read stage, write stage) - if equal, no register bypass is required
    m4+cpu_viz(@4)    // For visualisation
-
+```
 
 #### Dealing with invalid cycles
 
 #### Modifying 3-cycle RISC-V to Distribute Logic
+```
 |cpu
       @0
          $reset = *reset;
@@ -689,10 +689,10 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
-
+```
 
 #### Register File Bypass
-
+```
 |cpu
       @0
          $reset = *reset;
@@ -793,10 +793,10 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
-
+```
 
 #### To correct Branch Target Path
-
+```
 |cpu
       @0
          $reset = *reset;
@@ -896,10 +896,10 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
-
+```
 
 #### Complete Instruction Decode
-
+```
 |cpu
       @0
          $reset = *reset;
@@ -1023,10 +1023,10 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
-
+```
 
 ### Complete ALU
-
+```
 |cpu
       @0
          $reset = *reset;
@@ -1171,7 +1171,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
       m4+imem(@1)    // Args: (read stage)
       m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
       m4+cpu_viz(@4)    // For visualisation
-
+```
 
 [Back to Top](#top)
 
