@@ -1845,3 +1845,30 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 [Back to Top](#top)
 
 </details>
+
+# References
+You can follow the below mentioned sites for more information regarding the particular topics.
+
++ RISC-V: For in-depth information on the RISC-V architecture and its applications, you can visit the official RISC-V website at RISC-V.
++ Makerchip Platform: Explore the Makerchip platform, a valuable resource for hardware design and simulation, by visiting their website at Makerchip Platform.
++ TL-Verilog: To learn more about TL-Verilog, an innovative hardware description language, and its applications, you can refer to the official website at TL-Verilog or an alternative resource at TL-X.org.
++ Redwood EDA: Get insights into Redwood EDA, a platform for open-source EDA tools, by visiting their official website at Redwood EDA.
++ VLSI System Design: For comprehensive knowledge and resources related to VLSI system design, you can explore the content available on VLSI System Design.
+
+# Acknowledgements
+We would like to extend our gratitude to the following individuals for their valuable contributions and support:
+
++ Prof. Mahesh Awati, Associate Professor at PES University.
++ Kunal Ghosh, Co-founder of VSD Corp. Pvt. Ltd.
++ Steve Hoover, Founder of Redwood EDA.
+
+# Contact Information
+For any inquiries or further information, please don't hesitate to reach out to the following contacts:
+
++ Kunal Ghosh
+  - Director, VSD Corp. Pvt. Ltd.
+  - Email: kunalghosh@gmail.com
+  
++ Steve Hoover
+  - Founder, Redwood EDA
+  - Email: steve.hoover@redwoodeda.com
