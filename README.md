@@ -1849,7 +1849,7 @@ All the code files are located within the "DAY4" folder : [Link to DAY4 ](https:
 # References
 You can follow the below mentioned sites for more information regarding the particular topics.
 
-+ RISC-V: For in-depth information on the RISC-V architecture and its applications, you can visit the official RISC-V website at [RISC-V](https://riscv.org/)
++ RISC-V: For in-depth information on the RISC-V architecture and its applications, you can visit the official RISC-V website at [RISC-V](https://riscv.org/).
 + Makerchip Platform: Explore the Makerchip platform, a valuable resource for hardware design and simulation, by visiting their website at [Makerchip Platform](https://makerchip.com/).
 + TL-Verilog: To learn more about TL-Verilog, an innovative hardware description language, and its applications, you can refer to the official website at [TL-Verilog](https://www.redwoodeda.com/tl-verilog ) or [TL-Verilog]( http://tl-x.org/).
 + Redwood EDA: Get insights into Redwood EDA, a platform for open-source EDA tools, by visiting their official website at [Redwood EDA](https://www.redwoodeda.com/).
